@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://boxicons.com/">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a href="#">
+            <img src="logo.png" alt="YouTube Logo" class="youtube-logo" />
+          </a>
+          <form class="search-bar">
+            <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+            <button type="submit" class="search-btn">
+              <img src="./bx-search.svg" />
+            </button>
+          </form>
+          <div class="menu-icons">
+            <a href="#">
+              <img src="./bxs-video-plus.svg" alt="Upload Video" />
+            </a>
+            <a href="#">
+              <img src="apps.svg" alt="Apps" />
+            </a>
+            <a href="#">
+              <img src="./bxs-bell.svg" alt="Notifications" />
+            </a>
+            <a href="#">
+              <img class="menu-channel-icon" src="http:///unsplash.it/36/36?gravity=center" alt="Your Channel" />
+            </a>
+          </div>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h3 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="logo.png" alt="YouTube Logo" class="youtube-logo" /></h3>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Shorts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Subcriptions</a>
+                </li>
+              </ul>
+              <hr>
+              <h5><b>You</b></h5>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Your channel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Your videos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Watch later</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Liked videos</a>
+                </li>
+              </ul>
+              <hr>
+              <h5><b>Explore</b></h5>
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Shopping</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Music</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Live</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Gaming</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Learning</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Fasion & Beauty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Podcasts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+  </header>
+  <br>
+  <div class="categories">
+    <section class="category-section">
+      <button class="category active">All</button>
+      <button class="category">Gaming</button>
+      <button class="category">JavaScript</button>
+      <button class="category">Music</button>
+      <button class="category">Algorithms</button>
+      <button class="category">Cricket</button>
+      <button class="category">Live</button>
+      <button class="category">News</button>
+      <button class="category">Comedy</button>
+      <button class="category">Watched</button>
+      <button class="category">Mixes</button>
+      <button class="category">Watched</button>
+      <button class="category">Vlogs</button>
+      <button class="category">AI</button>
+      <button class="category">Computers</button>
+    </section>
+  </div>
+  <div class="videos">
+    <section class="video-section">
+      <h2 class="video-section-title">
+        <b>Latest from us</b>
+        <button class="video-section-title-close">&times;</button>
+      </h2>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/SArQpkESJBk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7B8eSTJY_IXhmO_PTuyf7mWVvtQ" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKbwX-NLbwQUdVRX4Ln832NF8JsDqbSry96-SKJgGA=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">PP vs JPP</a>
+            <a href="#" class="video-channel-name">Pro Kabaddi</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 day ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/jLqlPTPhsz0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAl0njjgCSrNRdaASZKVEOnZ-8Y8w" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKavLv9AqAr4i_glinAwneQUPJh_Xd0rxi1hKX5bYQ=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Ind vs Aus</a>
+            <a href="#" class="video-channel-name">Live Insaan</a>
+            <div class="video-metadata">
+              <span>1.1M views</span>
+              •
+              <span>2 days ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/u6gGXp7nbUA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCwymr8f9aWfz4ajQlgtLz1hxQJ2g" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/NmIV_YlacNP8OqGCB5NLAG0n6maprjbhsvFL3gjiDj3jEdZ8wueaDIz0K7JJ3mSte3GamhhhSzE=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Job Portal</a>
+            <a href="#" class="video-channel-name">Code 24hrs</a>
+            <div class="video-metadata">
+              <span>495K views</span>
+              •
+              <span>1 year ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/HihakYi5M2I/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA2-pAfXFxkZFvdjiGepBQQOP9McQ" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKYSj1OfdqWSO4X4zCxWYvnVstqnJy-YKSwQ3XxzzA=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Salaar Trailer</a>
+            <a href="#" class="video-channel-name">Honarable Flims</a>
+            <div class="video-metadata">
+              <span>15M views</span>
+              •
+              <span>1 day ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/tlJVWvzOnlw/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB3BJSpCFaeqb5T1i3A77BJUPg2tw" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/H3djB_hVq1Ka1auGf5eCi-wUfwI-kctMW-skVqrXnJwAvqQxI8XSw_ErmyUMNEQmMIxcQgNhNGU=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Open Source</a>
+            <a href="#" class="video-channel-name">Dev</a>
+            <div class="video-metadata">
+              <span>1.2K views</span>
+              •
+              <span>2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/f4AocpJDfsM/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBPFFUZGokFavLe-TWfjtZEzuySnw" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/98XovCvt_BBM7FFrHdbWCvvSLTDTp1F4Ygi1rFOllcI5vdkG49GCRzMMj4p4ASCTJZtm7SX1mvA=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Rockstar Edit</a>
+            <a href="#" class="video-channel-name">Jujutsu</a>
+            <div class="video-metadata">
+              <span>2.4M views</span>
+              •
+              <span>3 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/7dYTw-jAYkY/hq720.jpg?sqp=-oaymwExCNAFEJQDSFryq4qpAyMIARUAAIhCGAHwAQH4Af4JgALQBYoCDAgAEAEYciBQKDowDw==&rs=AOn4CLBv8EA22Yqt1sQwnMMFLGwEu_opdQ" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKb9t5vLPpeR-hCiihUDzemzy37oz1YpaH0BjAIUhA=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Day 5 Surviving</a>
+            <a href="#" class="video-channel-name">Mr.Beast</a>
+            <div class="video-metadata">
+              <span>20M views</span>
+              •
+              <span>4 days ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/GJwjwgCp-ao/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDFZPzx2Lg7bcIYsg24IYrQJns8DA" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/QQJZr4TTwQzkrFOmYKIAeGrkgXihYeW-bK-G3fop9BaFBjjoyIZQL4799HFdcn1fgdzYviDzt-I=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Google CLoud</a>
+            <a href="#" class="video-channel-name">Swags</a>
+            <div class="video-metadata">
+              <span>23K views</span>
+              •
+              <span>2 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/WlOii3-GMVw/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBnIvhxaCK0iZTbroJEdACus1dSbA" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/uo_uK6n4WCeiO_6PM0sOADbh_6R-8gpNVHnReH-gwv08a-R5l4PihrOe2IMFuHSmB_EqQPMPQRY=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Granny Gameplay</a>
+            <a href="#" class="video-channel-name">Beastboy</a>
+            <div class="video-metadata">
+              <span>896K views</span>
+              •
+              <span>5 days ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/C6YtPJxNULA/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAzo7K2qduY-TRn6DCg_ZwLjCLlsg" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKZGyiFJtoR2Isio_S591bOWpCKBFaIzqSuAG56ubA=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">AI & ML</a>
+            <a href="#" class="video-channel-name">CodewithHarry</a>
+            <div class="video-metadata">
+              <span>324K views</span>
+              •
+              <span>4 months ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+
+
+    <section class="video-section">
+      <h2 class="video-section-title">
+        <b>Special Section</b>
+        <button class="video-section-title-close">&times;</button>
+      </h2>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/P8P_S1Fjl_Q/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLD_6PNlDTZcWvNOjgqfq5Kr_4Tt_g" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/j01juFvKwHnKHdgcklpPKLkfNBuGbGJKLBwXVhbN_5LeCU3S9bTsHBL-MKPRQCjpZpfPJ_dJ=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Motivational</a>
+            <a href="#" class="video-channel-name">CarryMinati</a>
+            <div class="video-metadata">
+              <span>35M views</span>
+              •
+              <span>1 month ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/1c-KjlPtZXY/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCHbgKoKZIotCnaPCkB7hpVbVlQrQ" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/tV7mR48kz0fcbL4056L7S_pfqygwKrRQB1Rb8YPP32CLnA8NT14zc9Cp87v6Xj1yWUl7N6hW=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Aspirants</a>
+            <a href="#" class="video-channel-name">Prime</a>
+            <div class="video-metadata">
+              <span>5.6M views</span>
+              •
+              <span>2 months ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/SkT8tDy45fU/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB49KFVsxkxoaEEo2IpE1H8VPLk-g" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/OIQVa7Q-Ib9IZXiw2BbEPhEFPBYsXYA_r-TJnL5uaC9nPuxfSn-ODDIPQn0w9zq4ppAFUJ5G3A=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">0 to FAANG</a>
+            <a href="#" class="video-channel-name">Tech</a>
+            <div class="video-metadata">
+              <span>92K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/IYxX38YvwzE/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCcVZPvwBrXZKaUpan6P-qDIDjNuA" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKbuLPuGgybvyWiFpyV5_idPiJI7s6XArbqabml4jQ=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Island Roast</a>
+            <a href="#" class="video-channel-name">Fukra Insaan</a>
+            <div class="video-metadata">
+              <span>1M views</span>
+              •
+              <span>4 days ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/c2M-rlkkT5o/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLChOMMboxajZtYw7UosWwW9P8CUvA" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKajeJQEU3SzSyfbXlLyAmQu03lss6eNW79LdrcyDQ=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">MongoDB in 1Hr</a>
+            <a href="#" class="video-channel-name">BroCode</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/ZONoMgeGAbI/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB1Pvjkpiy3G99UObVJAodWHG9gRw" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/zgMN9BuSQByG1SrpmLwcNB3MQhjDhS_pl9H1h7TaRievMfS4UpU7Z36j77z5_hnIW4N8uFX3NA=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Kricks</a>
+            <a href="#" class="video-channel-name">Netflix</a>
+            <div class="video-metadata">
+              <span>1.9M views</span>
+              •
+              <span>3 weeks ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/HFwestDHXg0/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB6CSFHcskKXLtL7_ApltB4LT1AJg" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/weT_fxfjcv8qfd7drXwx99Fd3v_AQoo_lNHjBsLggewCdnFRit89K00yz8BMt9F3G_qsulCKx9s=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">GTA SA</a>
+            <a href="#" class="video-channel-name">GTA Gaming</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/sQwuEj3xAw0/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCN8fqV6jTRDRYj85zOeEUhUv4XAw" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKbJYru3GjDGEPZXZ0h74YA9SKZluBBgJdgTYlHi=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Logic</a>
+            <a href="#" class="video-channel-name">Motive Speaks</a>
+            <div class="video-metadata">
+              <span>1K views</span>
+              •
+              <span>1 day ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/hySzY3Xt0_0/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAzZparvyE9ZXkhe4oBPa73exLOQA" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/kYP7MnKmrIh0eIWRtmy_P3_ofgxJhF6NCk5ldPzsSQn0UBf2gOE92CYlUwOOCq7XQ3ovEscr2X8=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Landing Page</a>
+            <a href="#" class="video-channel-name">Code for fun</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/Eypuw9PrclM/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB8QpKO1fns4hahu8oMf0NjPoUopg" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/a4AOsw2qHfuXAooYs7EMkwqJMmW_Wbqebpzm8Xmf2Rj_95QMLnAAFDNRNOJG-sSoairOXvQKrS8=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Suryakumar Yadav</a>
+            <a href="#" class="video-channel-name">Set max</a>
+            <div class="video-metadata">
+              <span>12M views</span>
+              •
+              <span>1 month ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+
+
+    <section class="video-section">
+      <h2 class="video-section-title">
+        <b>Recommended for you</b>
+        <button class="video-section-title-close">&times;</button>
+      </h2>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/ig7bC4Foj5I/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBbyyI5PKpADpIz64_aNRuCo60AhA" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKanYdNvJ1tP17KujO4w3GdNDCsjen9FIVdZuEEp5gE=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/ACKQDAlAfFE/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCZHbj3cwur-28OFhGrf1_FhdO4sw" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/FU332R7JMjZaRm1YGvk8NnHJ1C9zW_yLpXz0GkHqGXV0bDRaAuulxt7s2TEJkN05FojDn2I5JuU=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/GyaRvOCUqRg/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDYLOs1mK1FxMtl9Ppon_B09fTB8A" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/JmTxzrL_QEGJq-GxCcP84bq_p_muUKB3BEvk5vnX9YMkGFqRKVgK4vLlLl2Yyj5WWoIemHFUEg=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/rWQeqH526KA/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDg96BL4DeD8z0m1HhqBAq-_qRXIQ" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKYghqbtwuEh8SyJ5hqmCazX2R6z-spBCTro_apBuA=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/qJB_11xplvw/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBLLgHKZM6RhXLzJ_eGn6s4_T2PQg" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/Rhm3T32l1C85ipQ1cRTMITDOJI-XAO4dQeWlZlypHS3Hw43v8bzWsE_x53kYLZzx6RTw5Wk_=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/jB9kFj9BKtM/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBl-quW9jaum1Oi9OAutYz3nm8yCg" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ym0kos2ZKXPBNQU04WdHmKVAXr-Sb-vkGs094ZdJ1Qoy_iPAlJ78uKphibQ9lPkzYVNI-0eZ9w=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/MK9s5sHjO_k/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCf8w9-Jy7hZlvridA5leEbsJAlyw" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/oQ2NQMuq-9IS6_MZdsGXa0RWecaACremA01Z7jo-YpoEF1H6PyUF8PZzXkV10OYwSP3UMJDeTg=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/z2XS_RryJGk/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBYCaEBsU2W9gH0NFnWtXumiepHWw" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/rbHV6q4bGNJm5CZAc8lniKgOlPQD46UNH9szNGUCC1WkY50aQg88rtyi4k9F4J8FY3dF16En=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/X8ipUgXH6jw/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDtKGttDC1XpNCigSXH7C1W6DOenQ" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKb--NH6RwAGHYsD3KfxX-SAgWgIHrjR5E4Jb5SDSQ=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="video-container">
+        <a href="#" class="thumbnail" data-duration="12:24">
+          <img class="thumbnail-image" src="https://i.ytimg.com/vi/2O7K-8G2nwU/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBgKTFpWtpzKpxRA4NDeNt5ubEnSw" />
+        </a>
+        <div class="video-bottom-section">
+          <a href="#">
+            <img class="channel-icon" src="https://yt3.ggpht.com/ytc/APkrFKaJf4uyuDTpFkarRRPEZUMf4WNp3g0opk7tQDq1IEc=s68-c-k-c0x00ffffff-no-rj" />
+          </a>
+          <div class="video-details">
+            <a href="#" class="video-title">Video Title</a>
+            <a href="#" class="video-channel-name">Channel Name</a>
+            <div class="video-metadata">
+              <span>12K views</span>
+              •
+              <span>1 week ago</span>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
